@@ -18,8 +18,8 @@ const IMAGES = [
 ];
 
 const PRODUCT = {
-  price: 59.99,
-  comparePrice: 119.99,
+  price: 89.99,
+  comparePrice: 179.99,
   rating: 4.9,
   reviewCount: 10847,
 };
@@ -779,7 +779,7 @@ function Comparison() {
     { f: 'Physical effort', old: 'Extreme', vs: 'Zero' },
     { f: 'Corners & grout', old: 'Barely', vs: 'Every inch' },
     { f: 'Tools needed', old: 'Multiple', vs: '8-in-1' },
-    { f: 'Annual cost', old: '$200+', vs: '$59.99 once' },
+    { f: 'Annual cost', old: '$200+', vs: '$89.99 once' },
     { f: 'Back pain', old: 'Guaranteed', vs: 'Never again' },
   ];
 
