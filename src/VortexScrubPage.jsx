@@ -6,6 +6,9 @@ import {
   RotateCcw, X, Menu,
 } from 'lucide-react';
 
+const CHECKOUT_URL = 'https://vortexscrub.store/cart/50577915773148:1';
+const PRODUCT_URL = 'https://vortexscrub.store/products/vortexscrub%E2%84%A2-pro-max-8-in-1-cordless-electric-spin-scrubber';
+
 const PRODUCT = {
   name: 'VortexScrub Pro Max',
   tagline: 'Effortless Clean. Every Corner.',
@@ -215,7 +218,9 @@ function Navbar() {
 
         <div className="flex items-center gap-3">
           <a
-            href="#buy"
+            href={CHECKOUT_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-gradient-to-r from-[#0066ff] to-[#00b4ff] text-white px-5 py-2 rounded-full text-sm font-bold hover:shadow-lg hover:shadow-blue-500/25 transition-all active:scale-95"
           >
             Shop Now
@@ -301,7 +306,9 @@ function Hero() {
               className="flex flex-col sm:flex-row items-center gap-4 mb-8"
             >
               <a
-                href="#buy"
+                href={CHECKOUT_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full sm:w-auto bg-gradient-to-r from-[#0066ff] to-[#00b4ff] text-white px-8 py-4 rounded-full text-lg font-bold hover:shadow-xl hover:shadow-blue-500/30 transition-all active:scale-[0.98] flex items-center justify-center gap-2"
               >
                 <ShoppingCart className="w-5 h-5" />
@@ -608,7 +615,9 @@ function SpecsSection() {
             ))}
           </div>
           <a
-            href="#buy"
+            href={CHECKOUT_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-10 inline-flex items-center gap-2 bg-white text-slate-900 px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition active:scale-[0.98]"
           >
             <ShoppingCart className="w-4 h-4" />
@@ -837,10 +846,15 @@ function FinalCTA() {
               ))}
             </div>
 
-            <button className="w-full bg-gradient-to-r from-[#0066ff] to-[#00d4ff] text-white py-4 rounded-full text-lg font-black hover:shadow-xl hover:shadow-blue-500/30 transition-all active:scale-[0.98] flex items-center justify-center gap-2 cursor-pointer">
+            <a
+              href={CHECKOUT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full bg-gradient-to-r from-[#0066ff] to-[#00d4ff] text-white py-4 rounded-full text-lg font-black hover:shadow-xl hover:shadow-blue-500/30 transition-all active:scale-[0.98] flex items-center justify-center gap-2 cursor-pointer"
+            >
               <ShoppingCart className="w-5 h-5" />
               Add to Cart — ${PRODUCT.price}
-            </button>
+            </a>
 
             <div className="flex items-center justify-center gap-4 mt-5 text-white/30 text-xs">
               {[
