@@ -6,8 +6,8 @@ import {
   RotateCcw, X, Menu,
 } from 'lucide-react';
 
-const CHECKOUT_URL = 'https://aikefs-zd.myshopify.com/cart/50577915773148:1';
-const PRODUCT_URL = 'https://aikefs-zd.myshopify.com/products/vortexscrub%E2%84%A2-pro-max-8-in-1-cordless-electric-spin-scrubber';
+const CHECKOUT_URL = 'https://shop.vortexscrub.store/cart/50577915773148:1';
+const PRODUCT_URL = 'https://shop.vortexscrub.store/products/vortexscrub%E2%84%A2-pro-max-8-in-1-cordless-electric-spin-scrubber';
 
 const PRODUCT = {
   name: 'VortexScrub Pro Max',
